@@ -10,12 +10,21 @@
 		
 		<link rel="stylesheet" href="assets/main_style.css">
 		<script type = "text/javascript" src="JavaScript/game_of_life.js"></script>
+		<script type = "text/javascript" src="JavaScript/random_password.js"></script>
 	</head>
 	<body>
 
 		<!-- game of life module -->
 
 		<table id="game_of_life_field"></table>
-		<script>start_gol();</script>
+		<script>start_gol();</script><br>
+
+		<!-- random password module-->
+
+		<h1>Random Password Generator v1</h1>
+		<div class="password"></div>
+		<div class="butt_ran_pass">
+			<button onclick="generate_ran_password()">Generate Password</button>
+		</div>
 	</body>
 </html>
