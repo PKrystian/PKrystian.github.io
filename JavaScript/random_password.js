@@ -3,7 +3,7 @@ function generate_ran_password()
     var low_lett_list = "abcdefghijklmnopqrstuvwxyz";
     var upp_lett_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var num_list = "0123456789";
-    var special_list = "!@#$%^&*()_-+={}|:\\\"'<>,.?";
+    var special_list = "!@#$%^&*()_-/+={}|:\\\"'<>,.?";
 
     // to do: checkbox from user, what var list use to generate a password
 
