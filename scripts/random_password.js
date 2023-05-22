@@ -32,14 +32,14 @@ function generate_ran_password()
 
     if (checkbox_list.length === 0) 
     {
-        document.querySelector('.password').textContent = "Please select at least one password character type.";
+        document.querySelector(".password").textContent = "Please select at least one password character type.";
         return;
     }
 
     var full_list = checkbox_list.join("");
     var generated_password = generate_password_length(full_list, password_length);
 
-    document.querySelector('.password').textContent = generated_password;
+    document.querySelector(".password").textContent = generated_password;
 }
 
 function generate_password_length(characters, length) 
