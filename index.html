@@ -16,12 +16,18 @@
 
 		<!-- game of life module -->
 
-		<table id="game_of_life_field"></table>
-		<script>start_gol();</script><br>
+		<!-- <table id="game_of_life_field"></table>
+		<script>start_gol();</script><br> -->
 
 		<!-- random password module-->
 
 		<h1>Random Password Generator v1</h1>
+		<div class="checkbox_container_pass">
+			<input type="checkbox" name="password_check" value="low_lett">Use lower case letters (a-z)<br>
+			<input type="checkbox" name="password_check" value="upp_lett">User upper case letters (A-Z)<br>
+			<input type="checkbox" name="password_check" value="num_list">Use numbers (0-9)<br>
+			<input type="checkbox" name="password_check" value="spec_list">Use special characters (!-*)<br>
+		</div>
 		<div class="password"></div>
 		<div class="butt_ran_pass">
 			<button onclick="generate_ran_password()">Generate Password</button>
