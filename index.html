@@ -8,9 +8,11 @@
 
 		<!-- imports -->
 		
-		<link rel="stylesheet" href="assets/main_style.css">
-		<script type = "text/javascript" src="JavaScript/game_of_life.js"></script>
-		<script type = "text/javascript" src="JavaScript/random_password.js"></script>
+		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/gol.css">
+		<link rel="stylesheet" href="style/ran_pass.css">
+		<script type = "text/javascript" src="scripts/game_of_life.js"></script>
+		<script type = "text/javascript" src="scripts/random_password.js"></script>
 	</head>
 	<body>
 
@@ -20,17 +22,43 @@
 		<script>start_gol();</script><br> -->
 
 		<!-- random password module-->
-
-		<h1>Random Password Generator v1</h1>
+		
 		<div class="checkbox_container_pass">
-			<input type="checkbox" name="password_check" value="low_lett">Use lower case letters (a-z)<br>
-			<input type="checkbox" name="password_check" value="upp_lett">User upper case letters (A-Z)<br>
-			<input type="checkbox" name="password_check" value="num_list">Use numbers (0-9)<br>
-			<input type="checkbox" name="password_check" value="spec_list">Use special characters (!-*)<br>
+
+			<h3>Characters in password:</h3>
+
+			<label for="low_lett_checkbox">
+				<input type="checkbox" id="low_lett_checkbox" name="password_check" value="low_lett" checked>
+				Lowercase (abc)
+			</label>
+
+			<label for="upp_lett_checkbox">
+				<input type="checkbox" id="upp_lett_checkbox" name="password_check" value="upp_lett"> 
+				Uppercase (ABC)
+			</label>
+
+			<label for="num_list_checkbox">
+				<input type="checkbox" id="num_list_checkbox" name="password_check" value="num_list"> 
+				Numbers (123)
+			</label>
+
+			<label for="spec_list_checkbox">
+				<input type="checkbox" id="spec_list_checkbox" name="password_check" value="spec_list"> 
+				Symbols (#$%)
+			</label>
+
 		</div>
-		<div class="password"></div>
+		<div class="password_length_container">
+
+			<label for="password_length">Password Length:</label>
+			<input type="number" id="password_length" min="1" value="8">
+
+		</div>
 		<div class="butt_ran_pass">
+
 			<button onclick="generate_ran_password()">Generate Password</button>
+
 		</div>
+		<div class="password"></div>		
 	</body>
 </html>

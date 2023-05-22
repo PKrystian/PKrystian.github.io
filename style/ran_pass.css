@@ -1,0 +1,64 @@
+/* random_password */
+
+.checkbox_container_pass 
+{
+    text-align: center;
+}
+
+.checkbox_container_pass label 
+{
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.password_length_container 
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.password_length_container label 
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.password_length_container input[type="number"] 
+{
+    padding: 5px;
+    width: 100px;
+}
+
+.butt_ran_pass
+{
+    text-align: center;
+}
+
+.butt_ran_pass button 
+{
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+.password 
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.checkbox_container_pass
+{
+    text-align: center;
+}

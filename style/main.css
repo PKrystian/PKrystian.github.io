@@ -1,0 +1,14 @@
+/* main frame */
+
+body 
+{
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 
+{
+    text-align: center;
+    margin-top: 0;
+}
