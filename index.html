@@ -11,8 +11,10 @@
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/gol.css">
 		<link rel="stylesheet" href="style/ran_pass.css">
+		<link rel="stylesheet" href="style/webgl.css">
 		<script type = "text/javascript" src="scripts/game_of_life.js"></script>
 		<script type = "text/javascript" src="scripts/random_password.js"></script>
+		<script type = "text/javascript" src="scripts/web_gl.js"></script>
 	</head>
 	<body>
 
@@ -24,6 +26,11 @@
 			<button onclick="start_gol()">Start Game of Life</button>
 			
 		</div>
+
+		<!-- webgl animation module -->
+
+		<canvas id="webgl_canvas"></canvas>
+		<button id="webgl_start">Start WebGL Animation</button>
 
 		<!-- random password module-->
 		
