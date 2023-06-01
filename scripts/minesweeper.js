@@ -9,6 +9,15 @@ function start_game()
     var how_much_mines = document.getElementById("get_num_mines").value;
     how_much_mines = parseInt(how_much_mines);
 
+    const game_outcome = document.getElementById("game_outcome");
+    game_outcome.innerHTML = "";
+
+    const board_element = document.querySelector('.board');
+    board_element.innerHTML = "";
+
+    const timer_element = document.querySelector('.timer');
+    timer_element.textContent = "Time: 0s";
+
     const game = new Minesweeper(x_axis, y_axis, how_much_mines);
 }
 
@@ -193,6 +202,7 @@ class Minesweeper
   {
     if (this.is_game_over) 
     {
+      curr_time = new Date().getTime();
       return;
     }
     const curr_time = new Date().getTime();
