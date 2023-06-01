@@ -9,6 +9,8 @@
 		<!-- imports -->
 		
 		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/mineswe.css">
+    <script type="text/javascript" src="scripts/minesweeper.js"></script>
 
 	</head>
 	<body>
@@ -23,10 +25,22 @@
 		</header>
 		<div id="main">
 			<article>
-				<h1>work in progress! pick program from header</h1>
+        <div class="timer">Time: 0s</div>
+        <table class="board"></table>
 			</article>
 			<nav>
-				<h1>work in progress! pick program from header</h1>
+        <label for="get_x_board">Width of board: (X)</label>
+        <input type="number" id="get_x_board" min="1" value="16">
+
+        <label for="get_y_board">Heigth of board: (Y)</label>
+        <input type="number" id="get_y_board" min="1" value="16">
+
+        <label for="get_num_mines">How much mines:</label>
+        <input type="number" id="get_num_mines" min="1" value="40"><br><br>
+
+        <button onclick="start_game()">Start Minesweeper Game</button>
+
+        <h1 id="game_outcome"></h1>
 			</nav>
 		</div>
 		<footer>

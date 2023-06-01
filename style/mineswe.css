@@ -1,0 +1,42 @@
+.board 
+{
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.cell 
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell.unopened 
+{
+    background-color: #1b1616;
+}
+
+.cell.opened 
+{
+    background-color: #fff;
+}
+
+.cell.mine 
+{
+    background-color: #f00;
+}
+
+.cell.flagged 
+{
+    background-color: #ff0;
+}
+
+.timer 
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}

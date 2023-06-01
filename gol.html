@@ -9,6 +9,8 @@
 		<!-- imports -->
 		
 		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/gol.css">
+        <script type="text/javascript" src="scripts/game_of_life.js"></script>
 
 	</head>
 	<body>
@@ -23,10 +25,12 @@
 		</header>
 		<div id="main">
 			<article>
-				<h1>work in progress! pick program from header</h1>
+                <table id="game_of_life_field"></table>
 			</article>
 			<nav>
-				<h1>work in progress! pick program from header</h1>
+				<div class="center-button">
+                    <button onclick="start_gol()">Start Game of Life</button>
+                </div>
 			</nav>
 		</div>
 		<footer>
