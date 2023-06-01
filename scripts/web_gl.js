@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function()
             gl_Position = vec4((u_matrix * vec3(a_position, 1)).xy, 0, 1);
         }
     `;
-    // Change this value to change color
     const fragmentShaderSource = `
         precision mediump float;
 
@@ -54,12 +53,13 @@ document.addEventListener("DOMContentLoaded", function()
     const positionBuffer = gl.createBuffer();
 
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    // Change this values to change size
+    
     const positions = [
         -0.5, -0.5,
         0.5, -0.5,
         0.0,  0.5
     ];
+    
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
     gl.clearColor(0, 0, 0, 0);
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function()
     function animate() {
         if (!isAnimating) return;
         gl.clear(gl.COLOR_BUFFER_BIT);
-        // Change this to change speed
+
         const angle = performance.now() / 1000 / 6 * 2 * Math.PI;
         const cos = Math.cos(angle);
         const sin = Math.sin(angle);
